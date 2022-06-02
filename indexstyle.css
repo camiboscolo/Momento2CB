@@ -7,20 +7,32 @@
 
 }
 .logo{
-    margin-left: 50px;
+    margin-left: 40px;
     height: 150px;
+    display: inline;
 }
-.home{
-    height:50px;
-    margin-left: 45px;
-    position:absolute;
+.title{
+    display: inline;
+   justify-content: flex-end;
+    
 }
-h2{
+.cap1{
     margin-left: 18px;
-    text-align: center;
-    margin-bottom: 35px;
+    font-size: 40px;
     display: inline;
     font-weight: 500;
+    position: fixed;
+
+}
+.top5 {
+    margin-left: 18px;
+    font-size: 45px;
+    padding-bottom: 25px;
+    display: inline;
+    font-weight: 500;
+    padding: 15;
+   
+
 }
 body{
     background-color: #464E2E;
@@ -46,7 +58,18 @@ header {
     color:#464E2E;
 }
 
-
+.LISTAbs{
+    display: flex;
+    justify-content: flex-start;
+    background-color: #CDB699;
+    padding: 30px;
+    color:#464E2E;
+    width: 45%;
+}
+.spotify{
+    display: inline;
+    justify-content: flex-start;
+}
 .barranav{
    
     padding: 15px;
@@ -74,8 +97,8 @@ header {
     width: 100%;
  
 }
-.contacto{
-    display: flex;
+.contactofooter{
+    display:flex;
     justify-content:space-evenly;
     background-color: #CDB699;
     color: #464E2E;
