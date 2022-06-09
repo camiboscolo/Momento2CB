@@ -25,15 +25,16 @@
     font-size: 40px;
     display: inline-block;
     font-weight: 500;
+    float: right;
 }
 .top5 {
     margin-left: 18px;
     font-size: 35px;
     padding-bottom: 25px;
     display: inline;
-    font-weight: 500;
+    font-weight: 600;
     padding: 15;
-   
+   float: right;
 
 }
 body{
@@ -91,14 +92,15 @@ header {
 .OPCIONESsec {
     display: flex;
     justify-content: space-evenly;
-    padding-top: 25px;
+    padding-top: 15px;
    height: 200px;
-
+padding-bottom: 50px;
     width: 100%;
  
 }
-.contactofooter{
- 
+footer{
+    display: flex;
+
     justify-content:space-evenly;
     background-color: #CDB699;
     color: #464E2E;
@@ -106,6 +108,7 @@ header {
     padding: 10px;
     margin-top: 10px;
     text-align: center;
+
 }
 article{
     color:#CDB699 ;
@@ -117,4 +120,11 @@ article{
     padding: 10px;
     justify-content:space-evenly;
     align-items: center;
+}
+.icon{
+    display: none;
+}
+@media screen (max-width:480px){
+    .barranav{display:none;}
+    .icon {display: block;}
 }
