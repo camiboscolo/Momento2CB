@@ -63,6 +63,13 @@ header {
     padding: 50px;
     color:#464E2E;
 }
+.elenco {
+    display: flex;
+    justify-content: space-between;
+    background-color: #CDB699;
+    padding: 50px;
+    color:#464E2E;
+}
 
 .BANDA{
     
@@ -216,13 +223,20 @@ h3{
     }
     #navegador ul{
         display: none;
+       
     }
-    #navegador .responsive ul{
-        display: block;
-        width: 100%;
+    #navegador.responsive ul{
+        display: flex;
+    text-align: center;    
+    width: 100%;
+    margin: 10px;
+        height: 60px;
     }
   
-    .icon {display: block;}
+    .icon {display: block;
+  padding-left: 160px;
+background-color:#733C3C ;
+color: #CDB699;}
     body {display:block;}
     .example-image {
         height: auto;
@@ -315,10 +329,16 @@ h3{
                 margin-left: 35px;
             }
             .creds {
-                display: flexbox;
-                justify-content:flex-end;
-                padding: 5px;
+                display: block;
+                margin: 15px;
+               
             }
+            .elenco{
+                display: block;
+                margin: 15px;
+            }
+
+           
             
             .BANDA{  
             text-align: center;
