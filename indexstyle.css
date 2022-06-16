@@ -23,7 +23,7 @@
 .cap1{
     margin-left: 18px;
     font-size: 40px;
-    display: inline-block;
+ 
     font-weight: 500;
     float: right;
 }
@@ -31,7 +31,6 @@
     margin-left: 18px;
     font-size: 35px;
     padding-bottom: 25px;
-    display: inline;
     font-weight: 600;
     padding: 15;
    float: right;
@@ -53,6 +52,10 @@ header {
     color:#464E2E;
     
 }
+.tituloInd {
+    font-weight: 300px;
+    font-size: large;
+}
 .creds {
     display: flex;
     justify-content: space-between;
@@ -61,34 +64,85 @@ header {
     color:#464E2E;
 }
 
-.LISTAbs{
-    display: flex;
-    justify-content: flex-start;
+.BANDA{
+    
+    text-align: center;
     background-color: #CDB699;
-    padding: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin: 15px;
+padding: 20px;
+padding-left: 45px;
+padding-right: 45px;
     color:#464E2E;
-    width: 45%;
+    display: flex;
+    justify-content: space-evenly;
 }
-.spotify{
-    display: inline;
-    justify-content: flex-start;
-}
-.barranav{
+
+#navegador{
    
     padding: 15px;
   display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     background-color: #733C3C;
     color: #CDB699;
+ 
 }
+#navegador ul{
+    color: #CDB699;
+    list-style-type: none;  
+   
+    
+}
+#navegador li{
+    display: inline; 
+}
+.detalle {
+    padding-left: 70px;
+}
+.fotoselenco{
+    color: #CDB699;
+    background-color: #733C3C;
+    padding-top: 10px;
+    align-items: center;
+    width: 100%;
+    padding-left: 10px;
+   margin-bottom: 30px;
+   padding-bottom: 20px;
 
+}
+.fotoselenco img{
+    height: 200px;
+    padding-top: 10px;
+    display: inline;
+    justify-content: space-between;
+    padding-left: 100px;
+}
+.fotoselenco h6{
+   font-size: 20px;
+    margin-left: 30px;
+    
+}
+.fotoselenco p{
+    display: inline;
+    justify-content:space-between ;
+    margin-left: 35px;
+}
 .ubicacionSEC{
     background-color: #464E2E;
     color: #CDB699;
     height: 80px;
-    padding: 30px;
-    border:#CDB699 9px;
+    font-size: larger;
+    margin-left: 20px;
+    padding-top: 23px;
+    display: inline-block;
+    
 }
+.ubicacionSEC p{
+    background-color: #733C3C;
+    padding: 10px;
+     display:flex;
+ }
 .OPCIONESsec {
     display: flex;
     justify-content: space-evenly;
@@ -100,13 +154,12 @@ padding-bottom: 50px;
 }
 footer{
     display: flex;
-
     justify-content:space-evenly;
     background-color: #CDB699;
     color: #464E2E;
     width: 100%;
     padding: 10px;
-    margin-top: 10px;
+    margin-top: 75px;
     text-align: center;
 
 }
@@ -114,17 +167,169 @@ article{
     color:#CDB699 ;
     padding: 15px;
 }
-.example-image {
-    height: 230px;
-    display: inline-block;
-    padding: 10px;
-    justify-content:space-evenly;
-    align-items: center;
+#navegador a{
+    color: #CDB699
 }
+.form{
+    color: #CDB699;
+    padding: 20px;
+    background-color: #733C3C;
+    text-align: center;
+}
+a{
+    color: #464E2E;
+}
+a:hover{
+    color: #733C3C;
+  }
+#navegador a:hover{
+    color: #464E2E;
+  }
+  
+  a:active{
+    color: rgb(255, 0, 0);
+  }
 .icon{
     display: none;
 }
-@media screen (max-width:480px){
-    .barranav{display:none;}
+h3{
+    display: none;
+}
+.example-image {
+    height: 210px;
+    display: inline-block;
+  
+    padding: 10px;
+    justify-content:space-evenly;
+    align-items: center;
+   
+}
+
+@media  (max-width:480px) {
+    
+   #navegador div, #navegador a {
+        flex: 1 0 50%;
+    }
+   #navegador nav {
+        flex-basis: 100%;
+
+    }
+    #navegador ul{
+        display: none;
+    }
+    #navegador .responsive ul{
+        display: block;
+        width: 100%;
+    }
+  
     .icon {display: block;}
+    body {display:block;}
+    .example-image {
+        height: auto;
+        display: inline;
+        padding: 40px;
+        width: 100%;
+        align-items: center;}
+        .cap1{
+            display: none;
+        }
+        .top5 {
+            display: none;}
+            .logo{
+                margin-left: 0px;
+                width: 100%;
+                
+                display: inline;
+            }
+            h3{
+                display: block;
+                align-items: center;
+                padding: 4px;
+                font-size: 24px;
+                font-weight: 200px;
+                color: #CDB699;
+             background-color: #733C3C;
+            }
+            header {
+                justify-content:space-between;
+                background-color: #CDB699;
+                padding: 15px;
+                color:#464E2E;
+            }
+            footer{
+                display: flex;
+                justify-content:space-evenly;
+                background-color: #CDB699;
+                color: #464E2E;
+                width: 100%;
+                padding: 10px;
+                margin-top: 15px;
+                text-align: center;
+            
+            }
+            .ubicacionSEC p{
+               background-color: #733C3C;
+               padding: 10px;
+                display:inline;
+            }
+            .OPCIONESsec {
+                display: inline;
+                padding-top: 15px;
+               height: 100px;
+               margin-bottom: 10px;
+            padding-bottom: 50px;
+                width: 90%;
+             
+            }
+            .imgsSEC {
+                padding-left: 15px;
+                margin:20px ;
+            }
+           
+            .fotoselenco{
+                padding-top: 10px;
+                align-items: center;
+                width: 90%;
+                padding-left: 20px;
+                margin-left: 20px;
+               margin-bottom: 30px;
+               padding-bottom: 20px;
+            
+            }
+            .fotoselenco img{
+                height: 200px;
+                padding-top: 10px;
+                display: inline;
+                align-items: center;
+                padding-left: 50px;
+               
+            }
+            .fotoselenco h6{
+               font-size: 20px;
+                margin-left: 30px;
+                
+            }
+            .fotoselenco p{
+                display: flex;
+                
+                margin-left: 35px;
+            }
+            .creds {
+                display: flexbox;
+                justify-content:flex-end;
+                padding: 5px;
+            }
+            
+            .BANDA{  
+            text-align: center;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin: 15px;
+            padding: 20px;
+            padding-left: 45px;
+            padding-right: 45px;
+            display: flex;
+            justify-content:flex-end;
+        }
+
 }
