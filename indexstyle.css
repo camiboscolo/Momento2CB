@@ -94,6 +94,14 @@ padding-right: 25px;
 .bandasonora ul{
     list-style-type: none;
 }
+.banda2 {
+    text-align: center;
+    background-color: #CDB699;
+   
+    color:#464E2E;
+    display: flex;
+    justify-content: space-evenly;
+}
 
 
 #navegador{
