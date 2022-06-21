@@ -58,14 +58,20 @@ header {
 }
 .creds {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     background-color: #CDB699;
     padding: 50px;
     color:#464E2E;
 }
+.creds p {
+    font-size: 30px;
+}
+.elenco p {
+    font-size: 30px;
+}
 .elenco {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     background-color: #CDB699;
     padding: 50px;
     color:#464E2E;
