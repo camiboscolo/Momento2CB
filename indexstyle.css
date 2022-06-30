@@ -61,7 +61,7 @@ header {
     display: flex;
     justify-content: space-evenly;
     background-color: #CDB699;
-    padding: 50px;
+    margin: 40px;
     color:#464E2E;
 }
 .creds p {
@@ -74,7 +74,8 @@ header {
     display: flex;
     justify-content: space-evenly;
     background-color: #CDB699;
-    padding: 50px;
+    margin: 40px;
+    padding: 10px;
     color:#464E2E;
 }
 
@@ -129,30 +130,32 @@ padding-right: 25px;
 .fotoselenco{
     color: #CDB699;
     background-color: #733C3C;
-    padding-top: 10px;
-    align-items: center;
-    width: 100%;
-    padding-left: 10px;
-   margin-bottom: 30px;
-   padding-bottom: 20px;
+    padding: 10px;
+    text-align: center;
+    display: block;
+   
+    margin: 40px;
+ 
 
 }
 .fotoselenco img{
     height: 200px;
+   align-items: center;
+   margin: auto;
     padding-top: 10px;
-    display: inline;
+    display: flex;
     justify-content: space-between;
-    padding-left: 100px;
+
 }
 .fotoselenco h6{
    font-size: 20px;
-    margin-left: 30px;
+ 
     
 }
 .fotoselenco p{
-    display: inline;
+    display: inline-block;
     justify-content:space-between ;
-    margin-left: 35px;
+
 }
 .ubicacionSEC{
     background-color: #464E2E;
@@ -164,6 +167,7 @@ padding-right: 25px;
     display: inline-block;
     
 }
+
 .ubicacionSEC p{
     background-color: #733C3C;
     padding: 10px;
@@ -196,12 +200,7 @@ article{
 #navegador a{
     color: #CDB699
 }
-.form{
-    color: #CDB699;
-    padding: 20px;
-    background-color: #733C3C;
-    text-align: center;
-}
+
 a{
     color: #464E2E;
 }
@@ -230,6 +229,22 @@ h3{
     align-items: center;
    
 }
+.robb {
+    display: flex;
+    width: fit-content;
+    text-align: left ;
+    margin: 20px;
+    height: 300px;
+}
+.contacto {
+    display: flex;
+    color: #CDB699;
+    padding: 20px;
+    background-color: #733C3C;
+    text-align: right;
+    display: flex;
+    width: auto;
+}
 
 @media  (max-width:480px) {
     
@@ -245,7 +260,8 @@ h3{
        
     }
     #navegador.responsive ul{
-        display: flex;
+       display: block;
+      
     text-align: center;    
     width: 100%;
     margin: 10px;
@@ -318,48 +334,51 @@ color: #CDB699;}
             }
             .imgsSEC {
                 padding-left: 15px;
-                margin:20px ;
+                margin:auto ;
+                padding-top: 10px;
             }
            
             .fotoselenco{
-                padding-top: 10px;
-                align-items: center;
+                padding-top: 0px;
+                text-align: center;
                 width: 90%;
-                padding-left: 20px;
-                margin-left: 20px;
-               margin-bottom: 30px;
-               padding-bottom: 20px;
+               margin-left: 20px;
+               margin-right: 10px;
+               
             
             }
             .fotoselenco img{
                 height: 200px;
-                padding-top: 10px;
-                display: inline;
-                align-items: center;
-                padding-left: 50px;
+                margin-top: 0px;
+                display: block;
+               text-align: center;
+        
                
             }
             .fotoselenco h6{
                font-size: 20px;
-                margin-left: 30px;
+              
                 
             }
             .fotoselenco p{
-                display: flex;
+                display: block;
                 
-                margin-left: 35px;
+                
             }
             .creds {
                 display: block;
                 margin: 15px;
+                padding: 10px;
+                text-align: center;
                
             }
             .elenco{
                 display: block;
                 margin: 15px;
+                padding: 10px;
+                text-align: center;
             }
-
-           
+       
         .bandasonora{
             display: block;
         }
@@ -398,9 +417,25 @@ color: #CDB699;}
             justify-content:baseline;
         }
         #navegador li{
-            display: inline-flex; 
+     display: block;
         }
         .detalle {
-            padding-left: 30px;
+            padding-left: 0px;
+        }
+        .robb {
+            display: inline;
+            width: fit-content;
+            text-align: center ;
+            margin: 0px;
+            height: 200px;
+        }
+        .contacto {
+            display: block;
+            color: #CDB699;
+            padding: 20px;
+            background-color: #733C3C;
+            text-align: center;
+          
+            width: auto;
         }
 }
